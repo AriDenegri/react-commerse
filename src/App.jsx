@@ -1,13 +1,21 @@
 import './App.css'
-import  Button from "./components/Button"
+import  NavBar from "./components/NavBar"
+import ItemList from "./components/ItemList"
 
 function App() {
   return (
-    <Button 
-      color = 'red'
-      texto = 'Soy un boton'
-      callback = {() =>console.log("Me tocaron")}
+   <>
+    <NavBar
+      titulo = "Titulo Principal"
+      categoria1 = "Elemento 1 "
+      categoria2 = "Elemento 2"
+      categoria3 = "Elemento 3"
+      categoria4 = "Elemento 4"
+      />
+    <ItemList 
+      contenido = "Lista de productos, proximamente aqui..."
     />
+  </>
   )
 }
 export default App
