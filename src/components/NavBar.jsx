@@ -1,4 +1,4 @@
-import CustomizedBadges from "./ico"
+import CartWidget from "./CartWidget"
 function NavBar ({titulo, categoria1,categoria2,categoria3,categoria4}){
     return(
         <header>
@@ -15,7 +15,7 @@ function NavBar ({titulo, categoria1,categoria2,categoria3,categoria4}){
                     </ul>
 
                     <div className="navbar-cart">
-                    <CustomizedBadges number={1}/>
+                    <CartWidget number={1}/>
                     </div>
 
             </nav>
