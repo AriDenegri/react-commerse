@@ -6,15 +6,15 @@ function App() {
   return (
    <>
     <NavBar
-      titulo = "Titulo Principal"
-      categoria1 = "Elemento 1 "
-      categoria2 = "Elemento 2"
-      categoria3 = "Elemento 3"
-      categoria4 = "Elemento 4"
+      titulo = "CarLink"
+      categoria1 = "Rapidez"
+      categoria2 = "Cargamento"
+      categoria3 = "Económico"
+      categoria4 = "Comodidad"
       numeroCarrito = {1}
       />
     <ItemList 
-      contenido = "Lista de productos, proximamente aqui..."
+      contenido = "Lista de vehiculos, proximamente aqui..."
     />
   </>
   )
