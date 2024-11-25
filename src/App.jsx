@@ -11,6 +11,7 @@ function App() {
       categoria2 = "Elemento 2"
       categoria3 = "Elemento 3"
       categoria4 = "Elemento 4"
+      numeroCarrito = {1}
       />
     <ItemList 
       contenido = "Lista de productos, proximamente aqui..."

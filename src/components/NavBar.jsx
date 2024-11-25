@@ -1,5 +1,5 @@
 import CartWidget from "./CartWidget"
-function NavBar ({titulo, categoria1,categoria2,categoria3,categoria4}){
+function NavBar ({titulo, categoria1,categoria2,categoria3,categoria4, numeroCarrito}){
     return(
         <header>
             <nav className="navbar">
@@ -15,7 +15,7 @@ function NavBar ({titulo, categoria1,categoria2,categoria3,categoria4}){
                     </ul>
 
                     <div className="navbar-cart">
-                    <CartWidget number={1}/>
+                    <CartWidget number={numeroCarrito}/>
                     </div>
 
             </nav>
