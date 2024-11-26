@@ -1,5 +1,5 @@
 /* General Reset */
-body, h1, ul, li, a {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -42,12 +42,14 @@ body{
   .navbar-list a:hover {
     color: #f0a500;
     cursor: pointer;
+    border-color: #f0a500;
+    border-bottom: 2px solid;
 }
 
 .main-container {
     display: grid;
-    place-items: center; /* Centra horizontal y verticalmente */
-    height: calc(100vh - 70px); /* Altura total menos la altura de la navbar */
+    place-items: center; 
+    height: calc(100vh - 70px); 
     background-color: #f4f4f4;
   }
   

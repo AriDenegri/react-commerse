@@ -23,7 +23,3 @@ function NavBar ({titulo, categoria1,categoria2,categoria3,categoria4, numeroCar
     )
 }
 export default NavBar
-
-
-
-
