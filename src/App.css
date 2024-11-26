@@ -40,9 +40,9 @@ body{
 }
   
   .navbar-list a:hover {
-    color: #f0a500;
+    color: rgb(76, 132, 253);
     cursor: pointer;
-    border-color: #f0a500;
+    border-color: rgb(76, 132, 253);
     border-bottom: 2px solid;
 }
 
