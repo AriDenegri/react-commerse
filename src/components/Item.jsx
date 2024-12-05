@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import StarRatings from 'react-star-ratings';
 import Col from 'react-bootstrap/Col';
+import FormatedNumber from './FormatedNumber';
 
 function Item({item}) {
     return (
@@ -28,7 +29,7 @@ function Item({item}) {
                             />
                     </div>
                     <div className='d-flex justify-content-center'>
-                        <Button className='button' variant="primary">Reservar por ${item.precio_por_dia}</Button>
+                        <Button className='button' variant="primary">Reservar por ${<FormatedNumber number={item.precio_por_dia} />}</Button>
                     </div>
                 </Card.Body>
                 </Card>

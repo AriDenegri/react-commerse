@@ -3,12 +3,12 @@
         "id": 1,
         "marca": "Toyota",
         "modelo": "Corolla",
-        "categoria": ["Económico ", "Comodidad"],
+        "categoria": ["Económico "],
         "caballos_de_fuerza": 169,
         "peso": 1310,
         "traccion": "FWD",
         "pasajeros": 4,
-        "precio_por_dia": 45,
+        "precio_por_dia": 45000,
         "imagen": "src/assets/imgCars/Toyota-Corolla.png",
         "calificacion": 3.5
     },
@@ -21,7 +21,7 @@
         "peso": 1653,
         "traccion": "RWD",
         "pasajeros": 2,
-        "precio_por_dia": 120,
+        "precio_por_dia": 120000,
         "imagen": "src/assets/imgCars/Ford-Mustang-gt.png",
         "calificacion": 4.5
     },
@@ -34,7 +34,7 @@
         "peso": 2235,
         "traccion": "AWD",
         "pasajeros": 6,
-        "precio_por_dia": 95,
+        "precio_por_dia": 95000,
         "imagen": "src/assets/imgCars/Chevrolet-Silverado-1500.png",
         "calificacion": 5
     },
@@ -47,7 +47,7 @@
         "peso": 1625,
         "traccion": "AWD",
         "pasajeros": 5,
-        "precio_por_dia": 100,
+        "precio_por_dia": 100000,
         "imagen": "src/assets/imgCars/Tesla-Model-3-Performance.png",
         "calificacion": 3.2
     },
@@ -60,7 +60,7 @@
         "peso": 1955,
         "traccion": "AWD",
         "pasajeros": 5,
-        "precio_por_dia": 200,
+        "precio_por_dia": 200000,
         "imagen": "src/assets/imgCars/MercedesBens-Clase S.png",
         "calificacion": 5.2
     },
@@ -73,7 +73,7 @@
         "peso": 1250,
         "traccion": "FWD",
         "pasajeros": 4,
-        "precio_por_dia": 40,
+        "precio_por_dia": 40000,
         "imagen": "src/assets/imgCars/Honda-Civic-Type R.png",
         "calificacion": 3.8
     },
@@ -86,7 +86,7 @@
         "peso": 2400,
         "traccion": "AWD",
         "pasajeros": 6,
-        "precio_por_dia": 110,
+        "precio_por_dia": 110000,
         "imagen": "src/assets/imgCars/Dodge-Ram 1500.png",
         "calificacion": 3.7
     }
