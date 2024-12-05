@@ -87,8 +87,12 @@ body{
     justify-content: center; /* Alinea las tarjetas horizontalmente */
   }
   
-  .card-title, .card-text {
+  .card-title {
     text-align: center; /* Centra el texto dentro de cada tarjeta */
+  }
+
+  .card-text {
+    text-align: left;
   }
 
 .stars {

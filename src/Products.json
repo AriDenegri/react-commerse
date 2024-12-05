@@ -7,7 +7,7 @@
         "caballos_de_fuerza": 169,
         "peso": 1310,
         "traccion": "FWD",
-        "pasajeros": 5,
+        "pasajeros": 4,
         "precio_por_dia": 45,
         "imagen": "src/assets/imgCars/Toyota-Corolla.png",
         "calificacion": 3.5
@@ -20,7 +20,7 @@
         "caballos_de_fuerza": 450,
         "peso": 1653,
         "traccion": "RWD",
-        "pasajeros": 4,
+        "pasajeros": 2,
         "precio_por_dia": 120,
         "imagen": "src/assets/imgCars/Ford-Mustang-gt.png",
         "calificacion": 4.5
@@ -72,7 +72,7 @@
         "caballos_de_fuerza": 158,
         "peso": 1250,
         "traccion": "FWD",
-        "pasajeros": 5,
+        "pasajeros": 4,
         "precio_por_dia": 40,
         "imagen": "src/assets/imgCars/Honda-Civic-Type R.png",
         "calificacion": 3.8

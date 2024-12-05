@@ -9,8 +9,15 @@ function Item({item}) {
     <Card className='card' style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={item.imagen} />
                 <Card.Body>
+                    <ul>
                     <Card.Title>{item.marca} {item.modelo}</Card.Title>
-                    <Card.Text>Categorias: {item.categoria}</Card.Text>
+                    <li><Card.Text>Categorias: {item.categoria}</Card.Text></li>
+                    <li><Card.Text>HP: {item.caballos_de_fuerza}</Card.Text></li>
+                    <li><Card.Text>Peso: {item.peso}Kg</Card.Text></li>
+                    <li><Card.Text>Traccion: {item.traccion}</Card.Text></li>
+                    <li><Card.Text>Asientos: {item.pasajeros}</Card.Text></li>
+
+                    </ul>
                     <div className='stars' >
                         <StarRatings
                             rating={item.calificacion}
