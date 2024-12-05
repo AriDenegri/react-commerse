@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "marca": "Toyota",
+        "modelo": "Corolla",
+        "categoria": ["Económico ", "Comodidad"],
+        "caballos_de_fuerza": 169,
+        "peso": 1310,
+        "traccion": "FWD",
+        "pasajeros": 5,
+        "precio_por_dia": 45,
+        "imagen": "src/assets/imgCars/Toyota-Corolla.png",
+        "calificacion": 3.5
+    },
+    {
+        "id": 2,
+        "marca": "Ford",
+        "modelo": "Mustang",
+        "categoria": ["Rapidez ", "Comodidad"],
+        "caballos_de_fuerza": 450,
+        "peso": 1653,
+        "traccion": "RWD",
+        "pasajeros": 4,
+        "precio_por_dia": 120,
+        "imagen": "src/assets/imgCars/Ford-Mustang-gt.png",
+        "calificacion": 4.5
+    },
+    {
+        "id": 3,
+        "marca": "Chevrolet",
+        "modelo": "Silverado 1500",
+        "categoria": ["Cargamento "],
+        "caballos_de_fuerza": 310,
+        "peso": 2235,
+        "traccion": "AWD",
+        "pasajeros": 6,
+        "precio_por_dia": 95,
+        "imagen": "src/assets/imgCars/Chevrolet-Silverado-1500.png",
+        "calificacion": 5
+    },
+    {
+        "id": 4,
+        "marca": "Tesla",
+        "modelo": "Model 3",
+        "categoria": ["Económico ", "Rapidez"],
+        "caballos_de_fuerza": 283,
+        "peso": 1625,
+        "traccion": "AWD",
+        "pasajeros": 5,
+        "precio_por_dia": 100,
+        "imagen": "src/assets/imgCars/Tesla-Model-3-Performance.png",
+        "calificacion": 3.2
+    },
+    {
+        "id": 5,
+        "marca": "Mercedes-Benz",
+        "modelo": "S-Class",
+        "categoria": ["Comodidad "],
+        "caballos_de_fuerza": 429,
+        "peso": 1955,
+        "traccion": "AWD",
+        "pasajeros": 5,
+        "precio_por_dia": 200,
+        "imagen": "src/assets/imgCars/MercedesBens-Clase S.png",
+        "calificacion": 5.2
+    },
+    {
+        "id": 6,
+        "marca": "Honda",
+        "modelo": "Civic",
+        "categoria": ["Económico "],
+        "caballos_de_fuerza": 158,
+        "peso": 1250,
+        "traccion": "FWD",
+        "pasajeros": 5,
+        "precio_por_dia": 40,
+        "imagen": "src/assets/imgCars/Honda-Civic-Type R.png",
+        "calificacion": 3.8
+    },
+    {
+        "id": 7,
+        "marca": "Ram",
+        "modelo": "1500",
+        "categoria": ["Cargamento ","Comodidad"],
+        "caballos_de_fuerza": 395,
+        "peso": 2400,
+        "traccion": "AWD",
+        "pasajeros": 6,
+        "precio_por_dia": 110,
+        "imagen": "src/assets/imgCars/Dodge-Ram 1500.png",
+        "calificacion": 3.7
+    }
+]

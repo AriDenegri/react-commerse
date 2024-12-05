@@ -59,3 +59,43 @@ body{
     border-radius: 8px;
     text-align: center;
   }
+/*  */
+  .card {
+    width: 15rem; /* Reduce el ancho de las tarjetas */
+    margin: 15px auto; /* Asegura simetría horizontal y vertical */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al pasar el mouse */
+    transform: translateY(-4px); /* Efecto de elevación */
+  }
+  
+  .card img {
+    height: 150px; /* Establece una altura fija para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que se recorte si es necesario */
+    border-radius: 5px; /* Opcional: da bordes redondeados */
+  }
+
+.card-title {
+  font-weight: bold;
+}
+  
+  .row {
+    justify-content: center; /* Alinea las tarjetas horizontalmente */
+  }
+  
+  .card-title, .card-text {
+    text-align: center; /* Centra el texto dentro de cada tarjeta */
+  }
+
+.stars {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: rgba(57, 57, 255, 0.769);
+}

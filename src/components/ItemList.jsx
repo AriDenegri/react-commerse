@@ -1,10 +1,16 @@
-function ItemList({contenido}){
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Item from './Item';
+
+function ItemList({items}) {
     return(
-       <main>
-           <div className="main-container">
-           <p className="content">{contenido}</p>
-            </div>
-       </main>
+<Container>
+      <Row>
+        {items.map(item => (
+            <Item item={item}/>
+        ))}
+      </Row>
+    </Container>
     )
 }
 
