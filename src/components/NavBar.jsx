@@ -16,8 +16,7 @@ function NavBar() {
           />{' '}
           CarLink
         </Navbar.Brand>
-        
-        {/* Centrar el list-container en la barra de navegación */}
+  
         <div className="list-container">
           <ul className="navbar-list">
             <li><a>Rapidez</a></li>

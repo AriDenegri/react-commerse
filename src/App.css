@@ -13,7 +13,7 @@ body{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);  /* Esto centra el div horizontalmente */
-  top: auto;  /* Si deseas que esté centrado también verticalmente en la barra de navegación */
+  top: auto;  /* Esto centra el div verticalmente*/
 }
 
 .brand {
@@ -62,21 +62,21 @@ body{
   }
 /*  */
   .card {
-    width: 15rem; /* Reduce el ancho de las tarjetas */
+    width: 15rem; /* el ancho de las tarjetas */
     margin: 15px auto; /* Asegura simetría horizontal y vertical */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   transition: transform 0.2s, box-shadow 0.2s;
   }
 
   .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     transform: translateY(-4px); /* Efecto de elevación */
   }
   
   .card img {
     height: 150px; /* Establece una altura fija para las imágenes */
     object-fit: cover; /* Ajusta la imagen para que se recorte si es necesario */
-    border-radius: 5px; /* Opcional: da bordes redondeados */
+    border-radius: 5px;
   }
 
 .card-title {
