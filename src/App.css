@@ -8,49 +8,50 @@
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    background-color: #333;
-    color: #fff;
+
+.list-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);  /* Esto centra el div horizontalmente */
+  top: auto;  /* Si deseas que esté centrado también verticalmente en la barra de navegación */
 }
 
-.navbar-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+.brand {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
 .navbar-list {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
-  
-  .navbar-list li {
-    display: inline;
+
+.navbar-list li {
+  display: inline;
+  color: #ddd;
 }
-  
-  .navbar-list a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    transition: color 0.3s ease;
+
+.navbar-list a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+
 }
-  
-  .navbar-list a:hover {
-    color: rgb(76, 132, 253);
-    cursor: pointer;
-    border-color: rgb(76, 132, 253);
-    border-bottom: 2px solid;
+
+.navbar-list a:hover {
+  color: rgb(76, 132, 253);
+  cursor: pointer;
+  border-color: rgb(76, 132, 253);
+  border-bottom: 2px solid;
 }
 
 .main-container {
     display: grid;
     place-items: center; 
     height: calc(100vh - 70px); 
-    background-color: #f4f4f4;
   }
   
   .content {
