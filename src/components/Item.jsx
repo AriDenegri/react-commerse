@@ -1,13 +1,12 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import StarRatings from 'react-star-ratings';
-import { Rating } from '@mui/material';
 import Col from 'react-bootstrap/Col';
 import FormatedNumber from './FormatedNumber';
 
 function Item({item}) {
     return (
-<Col key={item.id}>
+<Col>
     <Card className='card' style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={item.imagen} />
                 <Card.Body>
