@@ -3,15 +3,24 @@ import ItemList from "./ItemList";
 
 function ItemListContainer() {
   const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('./src/Products.json')
-      .then(res => res.json())
-      .then(res => setItems(res));
+    setTimeout(() => {
+      fetch('./src/Products.json')
+        .then((res) => res.json())
+        .then((data) => {
+          setItems(data);
+          setLoading(false);
+        })
+        .catch((error) => console.error("Error fetching data:", error));
+    }, 1500);
   }, []);
 
   return (
-    <ItemList items={items}/>
+    <div>
+      {loading ? <p className="loading">Obteniendo listado de la flota...</p> : <ItemList items={items} />}
+    </div>
   );
 }
 

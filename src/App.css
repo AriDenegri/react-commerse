@@ -9,6 +9,12 @@ body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.loading {
+  display: block;
+  margin: 10vh;
+  text-align: center;
+}
+
 .list-container {
   position: absolute;
   left: 50%;
