@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import StarRatings from 'react-star-ratings';
+import { Rating } from '@mui/material';
 import Col from 'react-bootstrap/Col';
 import FormatedNumber from './FormatedNumber';
 
@@ -22,7 +23,7 @@ function Item({item}) {
                     <div className='stars' >
                         <StarRatings
                             rating={item.calificacion}
-                            starRatedColor="gold"
+                            starRatedColor="#ffac04"
                             numberOfStars={5}
                             starDimension="25px"
                             starSpacing="5px"

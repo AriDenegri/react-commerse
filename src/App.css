@@ -7,6 +7,7 @@
 
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    user-select: none;
 }
 
 .loading {
@@ -25,6 +26,10 @@ body{
 .brand {
   color: rgb(255, 255, 255);
   font-weight: bold;
+}
+
+.brand:hover {
+  color: rgb(255, 255, 255);
 }
 
 .navbar-list {
@@ -71,7 +76,7 @@ body{
     width: 15rem; /* el ancho de las tarjetas */
     margin: 15px auto; /* Asegura simetría horizontal y vertical */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
   }
 
   .card:hover {
