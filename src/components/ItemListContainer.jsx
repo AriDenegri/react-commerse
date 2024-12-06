@@ -7,7 +7,7 @@ function ItemListContainer() {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch('./src/Products.json')
+      fetch('./src/Items.json')
         .then((res) => res.json())
         .then((data) => {
           setItems(data);
