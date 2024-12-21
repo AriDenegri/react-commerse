@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import StarRatings from 'react-star-ratings';
 import Col from 'react-bootstrap/Col';
 import FormatedNumber from './FormatedNumber';
+import { Link } from 'react-router';
 
 function Item({item}) {
     return (
@@ -29,7 +30,7 @@ function Item({item}) {
                             />
                     </div>
                     <div className='d-flex justify-content-center'>
-                        <Button className='button' variant="primary">Reservar por ${<FormatedNumber number={item.precio_por_dia} />}</Button>
+                        <Button as={Link} to={`/item/${item.id}`} className='button' variant="primary">Reservar por ${<FormatedNumber number={item.precio_por_dia} />}</Button>
                     </div>
                 </Card.Body>
                 </Card>

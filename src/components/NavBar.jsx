@@ -1,15 +1,16 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from "./CartWidget";
+import { Link } from 'react-router';
 
 function NavBar() {
   return (
     <Navbar className="bg-dark">
       <Container className="d-flex justify-content-between align-items-center">
-        <Navbar.Brand className='brand'>
+        <Navbar.Brand as={Link} to={"/"} className='brand'>
           <img
             alt=""
-            src="./src/assets/logos/logo.png"
+            src="/logos/logo.png"
             width="90"
             height="35"
             className="d-inline-block align-top"
@@ -19,10 +20,10 @@ function NavBar() {
   
         <div className="list-container">
           <ul className="navbar-list">
-            <li><a>Rapidez</a></li>
-            <li><a>Cargamento</a></li>
-            <li><a>Economico</a></li>
-            <li><a>Comodidad</a></li>
+            <Link to={"/categoria/Rapidez"}>Rapidez</Link>
+            <Link to={"/categoria/Cargamento"}>Cargamento</Link>
+            <Link to={"/categoria/Economico"}>Economico</Link>
+            <Link to={"/categoria/Comodidad"}>Comodidad</Link>
           </ul>
         </div>
         

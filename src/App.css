@@ -117,3 +117,59 @@ body{
   display: flex;
   flex-direction: row;
 }
+
+/* Item Detail */
+.item-detail-container {
+  margin: auto;
+  margin-top: 3vh;
+  display: flex;
+  height: 80vh; /* Ajusta la altura según necesites */
+  width: 98vw; /* Ajusta el ancho según necesites */
+  border: 1px solid rgba(99, 99, 99, 0.422); /* Borde negro fino */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  overflow: hidden; /* Para que el contenido no sobrepase los bordes redondeados */
+}
+
+.imageContainer {
+  flex: 1;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.imageContainer img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.details {
+  flex: 1;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details p {
+  max-width: 80vh;
+}
+
+.details-buy {
+  gap: 10px;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.counter p {
+  margin: auto;
+}
