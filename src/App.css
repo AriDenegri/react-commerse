@@ -197,6 +197,9 @@ body{
   flex-direction: row;
   gap: 0.3vh;
 }
+.kilometraje p {
+  margin: auto;
+}
 
 .details-buy {
   gap: 10px;
