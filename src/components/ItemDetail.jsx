@@ -1,6 +1,6 @@
 import ItemCount from "./ItemCount"
 import StarRatings from 'react-star-ratings';
-import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import FormatedNumber from './FormatedNumber';
 
 function ItemDetail({item}) {
@@ -12,6 +12,15 @@ function ItemDetail({item}) {
         <div className="details">
             <h1>{item.marca} {item.modelo}</h1>
             <p>{item.descripcion}</p>
+            <ul>
+                    <li><Card.Text>Categorias: {item.categoria}</Card.Text></li>
+                    <li><Card.Text>HP: {item.caballos_de_fuerza}</Card.Text></li>
+                    <li><Card.Text>Peso: {item.peso}Kg</Card.Text></li>
+                    <li><Card.Text>Traccion: {item.traccion}</Card.Text></li>
+                    <li><Card.Text>Asientos: {item.pasajeros}</Card.Text></li>
+
+                    </ul>
+            <p className="kilometraje">Kilometraje:<FormatedNumber number={item.kilometraje}/> KM</p>
             <div className='stars' >
                         <StarRatings
                             rating={item.calificacion}
@@ -22,8 +31,7 @@ function ItemDetail({item}) {
                             />
             </div>
             <div className='d-flex justify-content-center details-buy'>
-                    <Button className='button' variant="primary">Reservar por ${<FormatedNumber number={item.precio_por_dia} />}</Button>
-                    <ItemCount />
+                    <ItemCount item={item} />
             </div>
         </div>
         </>

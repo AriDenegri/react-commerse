@@ -10,7 +10,7 @@ function ItemListContainer() {
   useEffect(() => {
     setTimeout(() => {
       fetch("/Items.json")
-        .then((res) => res.json())
+        .then((res) => res.json()) 
         .then((data) => {
           const filteredItems = categoria
             ? data.filter((item) => item.categoria === categoria)

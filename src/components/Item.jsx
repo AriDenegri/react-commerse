@@ -2,8 +2,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import StarRatings from 'react-star-ratings';
 import Col from 'react-bootstrap/Col';
-import FormatedNumber from './FormatedNumber';
 import { Link } from 'react-router';
+import FormatedNumber from './FormatedNumber';
 
 function Item({item}) {
     return (
@@ -14,11 +14,7 @@ function Item({item}) {
                     <ul>
                     <Card.Title>{item.marca} {item.modelo}</Card.Title>
                     <li><Card.Text>Categorias: {item.categoria}</Card.Text></li>
-                    <li><Card.Text>HP: {item.caballos_de_fuerza}</Card.Text></li>
-                    <li><Card.Text>Peso: {item.peso}Kg</Card.Text></li>
-                    <li><Card.Text>Traccion: {item.traccion}</Card.Text></li>
-                    <li><Card.Text>Asientos: {item.pasajeros}</Card.Text></li>
-
+                    <li><Card.Text className='counter'>Kilometraje:<FormatedNumber number={item.kilometraje}/> KM</Card.Text></li>
                     </ul>
                     <div className='stars' >
                         <StarRatings
@@ -30,7 +26,7 @@ function Item({item}) {
                             />
                     </div>
                     <div className='d-flex justify-content-center'>
-                        <Button as={Link} to={`/item/${item.id}`} className='button' variant="primary">Reservar por ${<FormatedNumber number={item.precio_por_dia} />}</Button>
+                        <Button as={Link} to={`/item/${item.id}`} className='button' variant="primary">Ver Más Detalles</Button>
                     </div>
                 </Card.Body>
                 </Card>

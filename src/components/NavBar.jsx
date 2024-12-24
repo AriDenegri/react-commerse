@@ -20,15 +20,18 @@ function NavBar() {
   
         <div className="list-container">
           <ul className="navbar-list">
-            <Link to={"/categoria/Rapidez"}>Rapidez</Link>
-            <Link to={"/categoria/Cargamento"}>Cargamento</Link>
-            <Link to={"/categoria/Economico"}>Economico</Link>
-            <Link to={"/categoria/Comodidad"}>Comodidad</Link>
+            <Link to={"/categoria/Deportivo"}>Deportivo</Link>
+            <Link to={"/categoria/Clásico"}>Clásico</Link>
+            <Link to={"/categoria/Híbrido"}>Híbrido</Link>
+            <Link to={"/categoria/Carreras"}>Carreras</Link>
+            <Link to={"/categoria/Compacto"}>Compacto</Link>
           </ul>
         </div>
         
         <div className="navbar-cart">
-          <CartWidget number={1} />
+          <Link to={"/Carrito"}>
+          <CartWidget />
+          </Link>
         </div>
       </Container>
     </Navbar>
