@@ -164,6 +164,28 @@ body{
   left: -29%;
 }
 
+.more-container {
+  max-width: 2.5vh;
+  max-height: 2.5vh;
+  transform: translateX(1vh);
+
+}
+
+.more-icon {
+  max-width: 2.5vh;
+  max-height: 2.5vh;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.more-icon:hover {
+  max-width: 2.5vh;
+  max-height: 2.5vh;
+  transition: 0.5s;
+  opacity: 1;
+
+}
+
 .details p {
   max-width: 80vh;
 }
