@@ -63,7 +63,7 @@ function ItemDetail({item}) {
                     <li>
                         <Card.Text>HP: {item.caballos_de_fuerza}
                             <IconButton onClick={infoHp} aria-label="Icon" color="secondary" className="more-container" >
-                                <img src="../public/logos/agregar.png" className="more-icon" />
+                                <img src="./public/logos/agregar.png" className="more-icon" />
                             </IconButton>    
                         </Card.Text></li>
                     <li>
