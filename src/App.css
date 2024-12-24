@@ -86,7 +86,106 @@ body{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     transform: translateY(-4px); /* Efecto de elevación */
   }
-  
+
+/* Logos */
+  #Honda {
+    position:absolute; /* Posición relativa a .image-container */
+    top: 5px; /* Ajusta la distancia desde el borde superior */
+    left: 10px; /* Ajusta la distancia desde el borde izquierdo */
+    z-index: 10; /* Asegura que el logo esté sobre la imagen */
+    width: auto; 
+    max-height: 10%;
+  }
+
+  #Audi {
+    position:absolute;
+    top: -10px;
+    left: 5px;
+    z-index: 10;
+    width: auto; 
+    max-height: 15%;
+  }
+
+  #BMW {
+    position:absolute;
+    top: -15px;
+    left: -20px;
+    z-index: 10;
+    width: auto; 
+    max-height: 20%;
+  }
+
+  #Chevrolet {
+    position:absolute;
+    top: 9px;
+    left: 5px;
+    z-index: 10;
+    width: auto; 
+    max-height: 6%;
+  }
+
+  #Fiat {
+    position:absolute;
+    top: 0px;
+    left: 10px;
+    z-index: 10;
+    width: auto; 
+    max-height: 15%;
+  }
+  #Lancia {
+    position:absolute;
+    top: 0px;
+    left: 10px;
+    z-index: 10;
+    width: auto; 
+    max-height: 13%;
+  }
+  #Mazda {
+    position:absolute;
+    top: 0px;
+    left: 6px;
+    z-index: 10;
+    width: auto; 
+    max-height: 12%;
+  }
+
+#Mitsubishi {
+  position:absolute;
+    top: 0px;
+    left: 6px;
+    z-index: 10;
+    width: auto; 
+    max-height: 12%;
+}
+
+#Nissan {
+  position:absolute;
+    top: 0px;
+    left: 6px;
+    z-index: 10;
+    width: auto; 
+    max-height: 12%;
+}
+
+#Porsche {
+  position:absolute;
+    top: 0px;
+    left: 6px;
+    z-index: 10;
+    width: auto; 
+    max-height: 12%;
+}
+
+#Toyota {
+  position:absolute; /* Posición relativa a .image-container */
+    top: -5px; /* Ajusta la distancia desde el borde superior */
+    left: 5px; /* Ajusta la distancia desde el borde izquierdo */
+    z-index: 10; /* Asegura que el logo esté sobre la imagen */
+    width: auto; 
+    max-height: 15%;
+
+}
+
   .card img {
     height: 150px; /* Establece una altura fija para las imágenes */
     object-fit: cover; /* Ajusta la imagen para que se recorte si es necesario */

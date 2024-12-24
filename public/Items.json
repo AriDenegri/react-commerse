@@ -2,6 +2,7 @@
     {
         "id": 1,
         "marca": "Audi",
+        "logo": "/logos/logo_audi.png",
         "modelo": "R8 4.2 FSI R tronic",
         "categoria": "Deportivo",
         "caballos_de_fuerza": 420,
@@ -17,6 +18,7 @@
     {
         "id": 2,
         "marca": "BMW",
+        "logo": "/logos/logo_bmw.png",
         "modelo": "3.0 CSL",
         "categoria": "Clásico",
         "caballos_de_fuerza": 206,
@@ -32,6 +34,7 @@
     {
         "id": 3,
         "marca": "Chevrolet",
+        "logo": "/logos/logo_chevrolet.png",
         "modelo": "Corvette Stingray Convertible (C3)",
         "categoria": "Clásico",
         "caballos_de_fuerza": 300,
@@ -47,6 +50,7 @@
     {
         "id": 4,
         "marca": "Fiat",
+        "logo": "/logos/logo_fiat.png",
         "modelo": "Abarth 595 Esseesse",
         "categoria": "Compacto",
         "caballos_de_fuerza": 160,
@@ -62,6 +66,7 @@
     {
         "id": 5,
         "marca": "Honda",
+        "logo": "/logos/logo_honda.png",
         "modelo": "Civic Type R (EK)",
         "categoria": "Deportivo",
         "caballos_de_fuerza": 182,
@@ -77,6 +82,7 @@
     {
         "id": 6,
         "marca": "Honda",
+        "logo": "/logos/logo_honda.png",
         "modelo": "Civic Type R (EK) Touring Car",
         "categoria": "Carreras",
         "caballos_de_fuerza": 290,
@@ -92,6 +98,7 @@
     {
         "id": 7,
         "marca": "Honda",
+        "logo": "/logos/logo_honda.png",
         "modelo": "NSX Type R",
         "categoria": "Deportivo",
         "caballos_de_fuerza": 280,
@@ -107,6 +114,7 @@
     {
         "id": 8,
         "marca": "Lancia",
+        "logo": "/logos/logo_lancia.png",
         "modelo": "Delta HF Integrale Evoluzione",
         "categoria": "Deportivo",
         "caballos_de_fuerza": 215,
@@ -122,6 +130,7 @@
     {
         "id": 9,
         "marca": "Lancia",
+        "logo": "/logos/logo_lancia.png",
         "modelo": "Stratos",
         "categoria": "Clásico",
         "caballos_de_fuerza": 190,
@@ -137,6 +146,7 @@
     {
         "id": 10,
         "marca": "Mazda",
+        "logo": "/logos/logo_mazda.png",
         "modelo": "RX-7 GT-X (FC)",
         "categoria": "Deportivo",
         "caballos_de_fuerza": 200,
@@ -152,6 +162,7 @@
     {
         "id": 11,
         "marca": "Mitsubishi",
+        "logo": "/logos/logo_mith.png",
         "modelo": "Lancer Evolution IV GSR",
         "categoria": "Deportivo",
         "caballos_de_fuerza": 276,
@@ -167,6 +178,7 @@
     {
         "id": 12,
         "marca": "Nissan",
+        "logo": "/logos/logo_nissan.png",
         "modelo": "SilEighty",
         "categoria": "Deportivo",
         "caballos_de_fuerza": 220,
@@ -182,6 +194,7 @@
     {
         "id": 13,
         "marca": "Nissan",
+        "logo": "/logos/logo_nissan.png",
         "modelo": "Silvia Q's (S13)",
         "categoria": "Deportivo",
         "caballos_de_fuerza": 135,
@@ -197,6 +210,7 @@
     {
         "id": 14,
         "marca": "Nissan",
+        "logo": "/logos/logo_nissan.png",
         "modelo": "Skyline GT-R V·spec II (R32)",
         "categoria": "Deportivo",
         "caballos_de_fuerza": 276,
@@ -212,6 +226,7 @@
     {
         "id": 15,
         "marca": "Porsche",
+        "logo": "/logos/logo_por.png",
         "modelo": "911 Carrera RS Club Sport (993)",
         "categoria": "Deportivo",
         "caballos_de_fuerza": 300,
@@ -227,6 +242,7 @@
     {
         "id": 16,
         "marca": "Porsche",
+        "logo": "/logos/logo_por.png",
         "modelo": "911 GT3 (996)",
         "categoria": "Deportivo",
         "caballos_de_fuerza": 360,
@@ -242,6 +258,7 @@
     {
         "id": 17,
         "marca": "Porsche",
+        "logo": "/logos/logo_por.png",
         "modelo": "911 GT3 (997)",
         "categoria": "Deportivo",
         "caballos_de_fuerza": 415,
@@ -257,6 +274,7 @@
     {
         "id": 18,
         "marca": "Toyota",
+        "logo": "/logos/logo_toyota.png",
         "modelo": "Prius G",
         "categoria": "Híbrido",
         "caballos_de_fuerza": 98,

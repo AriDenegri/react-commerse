@@ -8,8 +8,11 @@ import FormatedNumber from './FormatedNumber';
 function Item({item}) {
     return (
 <Col>
-    <Card className='card' style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={item.imagen} />
+    <Card className='card' style={{ width: '18rem', position: 'relative'}}>
+                <div className="image-container">
+                    <Card.Img variant="top" src={item.imagen} />
+                    <img className="logo-overlay" src={item.logo} alt="Logo" id={item.marca} />
+                </div>
                 <Card.Body>
                     <ul>
                     <Card.Title>{item.marca} {item.modelo}</Card.Title>
