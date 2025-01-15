@@ -1,19 +1,14 @@
 import { useParams } from "react-router";
 import { useState, useEffect } from "react";
 import ItemDetail from "./ItemDetail";
+import { getItem } from "../firebase/db";
 
 function ItemDetailContainer() {
   const { id } = useParams();
   const [item, setItem] = useState(null);
 
   useEffect(() => {
-    fetch("/Items.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const selectedItem = data.find((car) => car.id === parseInt(id));
-        setItem(selectedItem);
-      })
-      .catch((error) => console.error("Error al cargar el JSON:", error));
+      getItem(id, setItem)
   }, [id]);
 
   if (!item) {

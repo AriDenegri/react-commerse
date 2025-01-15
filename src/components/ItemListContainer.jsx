@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import ItemList from "./ItemList";
+import { getItems, getItemsByCategory } from "../firebase/db";
 
 function ItemListContainer() {
   const { categoria } = useParams();
@@ -8,18 +9,23 @@ function ItemListContainer() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      fetch("/Items.json")
-        .then((res) => res.json()) 
-        .then((data) => {
-          const filteredItems = categoria
-            ? data.filter((item) => item.categoria === categoria)
-            : data;
-          setItems(filteredItems);
-          setLoading(false);
-        })
-        .catch((error) => console.error("Error fetching data:", error));
-    }, 500);
+    if (categoria) {
+      getItemsByCategory(categoria)
+      .then(res => setItems(res))
+    } else {
+      getItems().then(res => setItems(res))
+    }
+
+    setLoading(true);
+    getItems()
+      .then((res) => {
+        const filteredItems = categoria
+          ? res.filter((item) => item.categoria === categoria)
+          : res;
+        setItems(filteredItems);
+      })
+      .catch((error) => console.error("Error fetching items:", error))
+      .finally(() => setLoading(false));
   }, [categoria]);
 
   return (

@@ -1,6 +1,7 @@
 import ListGroup from 'react-bootstrap/ListGroup'
 import Button from 'react-bootstrap/Button'
 import CartItem from './CartItem'
+import { Link } from 'react-router';
 
 function CartItems({ items }) {
   if (items.length === 0) {
@@ -19,7 +20,7 @@ function CartItems({ items }) {
           <CartItem item={item} key={item.id} />
         ))}
       </ListGroup>
-      <Button variant='success' className='w-50 mt-3'>Finalizar compra</Button>
+      <Link to={"/Checkout"} className='w-50 mt-3'><Button variant='success' >Finalizar compra</Button></Link>
     </div>
   )
 }
