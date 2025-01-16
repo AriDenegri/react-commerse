@@ -8,7 +8,7 @@ function CartItems({ items }) {
     return (
       <div className='d-flex flex-column align-items-center mt-5'>
         <p>No hay productos en el carrito.</p>
-        <Button variant='primary' className='w-50 mt-3'>Volver a la tienda</Button>
+        <Button as={Link} to={"/"} variant='primary' className='w-50 mt-3'>Volver a la tienda</Button>
       </div>
     )
   }
