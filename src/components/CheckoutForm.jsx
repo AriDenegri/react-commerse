@@ -6,7 +6,8 @@ import { CartContext } from '../context/CartContext';
 import { serverTimestamp } from 'firebase/firestore';
 
 function CheckoutForm ( ) {
-    const { getTotal, cart } = useContext(CartContext)
+
+    const { getTotal, cart, clearCart } = useContext(CartContext)
     const handleSubmit = e => {
      e.preventDefault()
      const form = e.target
@@ -20,6 +21,8 @@ function CheckoutForm ( ) {
      }
 
      createOrder(order);
+     clearCart()
+     
 }
   return (
     <Form className='container mt-5' onSubmit={handleSubmit}>
