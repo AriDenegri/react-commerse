@@ -83,6 +83,7 @@ body{
     margin: 15px auto; /* Asegura simetría horizontal y vertical */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
   }
 
   .card:hover {
@@ -197,20 +198,24 @@ body{
 
 .card-title {
   font-weight: bold;
+  white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: transform 3s ease;
 }
-  
-  .row {
+
+.card-title:hover {
+  transition-delay: 0.7s;
+  transform: translateX(-60%);
+  text-overflow:clip;
+  overflow: visible;
+}
+
+.row {
     justify-content: center; /* Alinea las tarjetas horizontalmente */
   }
   
-  .card-title {
-    text-align: center; /* Centra el texto dentro de cada tarjeta */
-  }
-
-  .card-text {
-    text-align: left;
-  }
-
 .stars {
   margin: 20px;
   display: flex;
