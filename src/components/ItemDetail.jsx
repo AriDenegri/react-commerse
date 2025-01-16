@@ -48,6 +48,7 @@ function ItemDetail({ item }) {
                 <img src={item.imagen} alt={`${item.marca} ${item.modelo}`} className="image" />
             </div>
             <div className="details">
+            <img className="logo-detail" src={item.logo} alt="Logo" />
                 <h1>{item.marca} {item.modelo}</h1>
                 <p>{item.descripcion}</p>
                 <ul>

@@ -221,6 +221,15 @@ body{
 }
 
 /* Item Detail */
+.logo-detail {
+  position:absolute; /* Posición relativa a .image-container */
+    top: 12%; /* Ajusta la distancia desde el borde superior */
+    left: auto; /* Ajusta la distancia desde el borde izquierdo */
+    z-index: 10; /* Asegura que el logo esté sobre la imagen */
+    width: auto; 
+    max-height: 12%;
+}
+
 .item-detail-container {
   margin: auto;
   margin-top: 3vh;

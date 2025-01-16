@@ -36,7 +36,6 @@ export const getItem = async (id, setItem) => {
   }
 }
 
-
 export const createOrder = async(order) => {
   try {
     const docRef = await addDoc(collection(db, "orders"), order);
