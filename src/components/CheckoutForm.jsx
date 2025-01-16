@@ -16,13 +16,12 @@ function CheckoutForm() {
     const email = form.email.value.trim();
     const phone = form.phone.value.trim();
 
-    // Validación de campos vacíos
     if (!name || !email || !phone) {
       setError('Por favor, completa todos los campos antes de finalizar la compra.');
       return;
     }
 
-    setError(''); // Limpiar errores previos si todo está bien
+    setError('');
 
     const order = {
       buyer: { name, email, phone },
@@ -52,7 +51,7 @@ function CheckoutForm() {
         <Form.Control type="text" name="phone" placeholder="+54 1193456793" />
       </Form.Group>
 
-      {error && <p className="text-danger">{error}</p>} {/* Mostrar mensaje de error */}
+      {error && <p className="text-danger">{error}</p>}
 
       <Button variant="primary" type="submit" disabled={cart.length < 1}>
         Finalizar Pedido
