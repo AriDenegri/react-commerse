@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import FormatedNumber from './FormatedNumber';
 import { IconButton } from "@mui/material";
 import Swal from 'sweetalert2';
+import agregar from './logos/agregar.png';
 
 function ItemDetail({ item }) {
     const infoCategoria = () => {
@@ -55,32 +56,32 @@ function ItemDetail({ item }) {
                     <li>
                         <Card.Text>Categorias: {item.categoria}
                             <IconButton onClick={infoCategoria} aria-label="Icon" color="secondary" className="more-container" >
-                                <img src="\public\logos\agregar.png" className="more-icon" />
+                                <img src={agregar} className="more-icon" />
                             </IconButton>
                         </Card.Text>
                     </li>
                     <li>
                         <Card.Text>HP: {item.caballos_de_fuerza}
                             <IconButton onClick={infoHp} aria-label="Icon" color="secondary" className="more-container" >
-                                <img src="\public\logos\agregar.png" className="more-icon" />
+                                <img src={agregar} className="more-icon" />
                             </IconButton>
                         </Card.Text></li>
                     <li>
                         <Card.Text>Peso: {item.peso}Kg
                             <IconButton onClick={infoPeso} aria-label="Icon" color="secondary" className="more-container" >
-                                <img src="\public\logos\agregar.png" className="more-icon" />
+                                <img src={agregar}  className="more-icon" />
                             </IconButton>
                         </Card.Text></li>
                     <li>
                         <Card.Text>Traccion: {item.traccion}
                             <IconButton onClick={infoTraccion} aria-label="Icon" color="secondary" className="more-container" >
-                                <img src="\public\logos\agregar.png" className="more-icon" />
+                                <img src={agregar}  className="more-icon" />
                             </IconButton>
                         </Card.Text></li>
                     <li>
                         <Card.Text>Asientos: {item.pasajeros}
                             <IconButton onClick={infoAsientos} aria-label="Icon" color="secondary" className="more-container" >
-                                <img src="\public\logos\agregar.png" className="more-icon" />
+                                <img src={agregar}  className="more-icon" />
                             </IconButton>
                         </Card.Text></li>
                 </ul>
